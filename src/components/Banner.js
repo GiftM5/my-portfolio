@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = ["Cybersecurity", "Cloud Security Engineer", "Full Stack Developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -20,12 +20,14 @@ export const Banner = () => {
     }, delta);
 
     return () => { clearInterval(ticker) };
-  }, [text])
+  }, [text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+    let updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
 
     setText(updatedText);
 
@@ -45,7 +47,7 @@ export const Banner = () => {
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
-  }
+  };
 
   return (
     <section className="banner" id="home">
@@ -56,9 +58,20 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <h1>
+                  {`Hi! I'm Mpho Gift Mofokeng`}{" "}
+                  <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Java Developer", "Python Developer", "Cloud Security Enthusiast" ]'>
+                    <span className="wrap">{text}</span>
+                  </span>
+                </h1>
+                <p>
+                  I am a passionate software developer with expertise in Java, Python, and cloud security.
+                  My background spans software engineering, web development, and networking fundamentals,
+                  with a strong interest in building secure and scalable solutions.
+                  Currently, I’m enhancing my skills in cloud engineering and cybersecurity
+                  through the CloudSec Network Bootcamp.
+                </p>
+                <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
@@ -73,5 +86,5 @@ export const Banner = () => {
         </Row>
       </Container>
     </section>
-  )
-}
+  );
+};
