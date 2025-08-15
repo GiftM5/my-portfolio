@@ -4,6 +4,120 @@ import { Container, Row, Col, Card, Button, Modal, Badge } from "react-bootstrap
 import { cloudSecData, getCurrentWeekStatus } from "../data/cloudSecData";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// Component to display screenshot or placeholder
+const ScreenshotDisplay = ({ screenshot }) => {
+  const [imageExists, setImageExists] = useState(true);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageError = () => {
+    setImageExists(false);
+  };
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
+  // List of screenshots that actually exist (based on your files)
+  const existingScreenshots = [
+    // Week 1 - Missing: week1-aws-console.png
+    'week1-aws-billing-dashboard.png',
+
+    // Week 2 - Complete
+    'week2-identity-center.png',
+    'week2-user-permissions.png',
+
+    // Week 3 - Complete
+    'week3-ec2-instance.png',
+    'week3-rdp-connection.png',
+    'week3-security-group.png',
+
+    // Week 4 - Complete
+    'week4-peering-connection.png',
+    'week4-route-table.png',
+    'week4-two-vpcs.png',
+
+    // Week 5 - Complete
+    'week5-ecs-cluster.png',
+    'week5-grafana-login.png',
+    'week5-security-group.png',
+    'week5-task-definition.png',
+
+    // Week 6 - Missing: week6-ecs-metabase.png
+    'week6-metabase-setup.png',
+    'week6-rds-instance.png',
+    'week6-security-groups.png',
+
+    // Week 7 - Complete
+    'week7-cloudwatch-dashboard.png',
+    'week7-ecs-cluster-service.png',
+    'week7-load-testing-metrics.png',
+    'week7-task-definition-resources.png',
+
+    // Week 8 - Missing: week8-cloudfront-deployed.png
+    'week8-cloudfront-distribution.png',
+    'week8-live-website.png',
+    'week8-s3-bucket-policy.png',
+    'week8-s3-static-hosting.png'
+
+    // Week 9 & 10 - All missing (will show placeholders)
+  ];
+
+  const filename = screenshot.url.split('/').pop();
+  const hasScreenshot = existingScreenshots.includes(filename);
+
+  if (hasScreenshot && imageExists) {
+    return (
+      <div className="screenshot-item">
+        <h6>{screenshot.title}</h6>
+        <div className="screenshot-container">
+          <img
+            src={process.env.PUBLIC_URL + screenshot.url}
+            alt={screenshot.title}
+            className="img-fluid rounded shadow-sm"
+            style={{
+              maxHeight: '400px',
+              objectFit: 'contain',
+              width: '100%',
+              display: imageLoaded ? 'block' : 'none'
+            }}
+            onError={handleImageError}
+            onLoad={handleImageLoad}
+          />
+          {!imageLoaded && (
+            <div className="loading-placeholder">
+              <div className="spinner-border text-primary" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          )}
+        </div>
+        <p className="small text-muted">{screenshot.description}</p>
+      </div>
+    );
+  }
+
+  // Show placeholder for missing screenshots
+  return (
+    <div className="screenshot-item">
+      <h6>{screenshot.title}</h6>
+      <div className="screenshot-placeholder">
+        <div className="placeholder-content">
+          <div className="placeholder-icon">📸</div>
+          <h5>{screenshot.title}</h5>
+          <p>{screenshot.description}</p>
+          <small className="text-muted">
+            Screenshot file: <code>{filename}</code>
+          </small>
+          <br />
+          <small className="text-warning">
+            Add your screenshot to: <code>public{screenshot.url}</code>
+          </small>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export const CloudSecNetworck = ({ selectedWeek, onWeekSelect }) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedWeekData, setSelectedWeekData] = useState(null);
@@ -96,7 +210,14 @@ export const CloudSecNetworck = ({ selectedWeek, onWeekSelect }) => {
       </Row>
 
       {/* Detailed Week Modal */}
-      <Modal show={showModal} onHide={() => setShowModal(false)} size="lg">
+      <Modal
+        show={showModal}
+        onHide={() => setShowModal(false)}
+        size="lg"
+        centered
+        backdrop="static"
+        keyboard={true}
+      >
         <Modal.Header closeButton>
           <Modal.Title>
             {selectedWeekData?.title} {selectedWeekData && getStatusBadge(selectedWeekData.status)}
@@ -167,19 +288,7 @@ export const CloudSecNetworck = ({ selectedWeek, onWeekSelect }) => {
                 <div className="screenshot-section">
                   <h6>Screenshots & Documentation</h6>
                   {selectedWeekData.screenshots.map((screenshot, index) => (
-                    <div key={index} className="screenshot-item">
-                      <h6>{screenshot.title}</h6>
-                      <img
-                        src={screenshot.url}
-                        alt={screenshot.title}
-                        className="img-fluid rounded shadow-sm mb-2"
-                        style={{ maxHeight: '300px', objectFit: 'cover' }}
-                        onError={(e) => {
-                          e.target.src = `https://via.placeholder.com/600x300?text=${encodeURIComponent(screenshot.title)}`;
-                        }}
-                      />
-                      <p className="small text-muted">{screenshot.description}</p>
-                    </div>
+                    <ScreenshotDisplay key={index} screenshot={screenshot} />
                   ))}
                 </div>
               )}

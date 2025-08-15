@@ -210,7 +210,7 @@ export const cloudSecData = {
         },
         {
           title: "Route Tables Configuration",
-          url: "/assets/img/cloudsec/week4-route-tables.png",
+          url: "/assets/img/cloudsec/week4-route-table.png",
           description: "Screenshot showing route tables with routes pointing to the other VPC through peering connection"
         }
       ],
