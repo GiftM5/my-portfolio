@@ -60,16 +60,14 @@ export const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>
                   {`Hi! I'm Mpho Gift Mofokeng`}{" "}
-                  <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Java Developer", "Python Developer", "Cloud Security Enthusiast" ]'>
+                  <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Junior Software Developer", "Final Year Student", "Python & Flask Specialist", "Backend Developer", "Bootcamp Mentor" ]'>
                     <span className="wrap">{text}</span>
                   </span>
                 </h1>
                 <p>
-                  I am a passionate software developer with expertise in Java, Python, and cloud security.
-                  My background spans software engineering, web development, and networking fundamentals,
-                  with a strong interest in building secure and scalable solutions.
-                  Currently, I’m enhancing my skills in cloud engineering and cybersecurity
-                  through the CloudSec Network Bootcamp.
+                  I am a final-year Software Engineering student at WeThinkCode_ with proven experience in full stack development,cloud security and backend API development.
+                  Ready for an Internship,Graduate Program or Junior developer roles with hands-on project experience.Feel free to go through my journey.
+                  
                 </p>
                 <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
