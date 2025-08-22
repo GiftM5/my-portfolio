@@ -51,81 +51,82 @@ export const Achievements = () => {
           <div className="achievements-bx">
             <Row>
               <Col lg={12} className="text-center mb-4">
-                <h3>Ready for Junior Developer Role</h3>
-                <p>Final-year WeThinkCode_ student with proven technical skills and real-world project experience</p>
+                <h3>From Code Enthusiast to Industry-Ready Developer</h3>
+                <p>My journey from physics student to software engineer showcases my passion for problem-solving and continuous learning. With hands-on experience in Python and Java, plus certifications in cutting-edge technologies like AI and cloud security, I'm ready to bring fresh perspectives and solid technical skills to your development team.</p>
               </Col>
             </Row>
             <Row className="text-center">
               <Col md={3} sm={6} className="mb-4">
                 <div className="achievement-item">
-                  <div className="achievement-number">{completedProjects}</div>
-                  <div className="achievement-label">CloudSec Projects</div>
-                  <div className="achievement-description">Hands-on cloud security projects</div>
+                  <div className="achievement-number">10</div>
+                  <div className="achievement-label">CloudSec Complete</div>
+                  <div className="achievement-description">100% CloudSec Network Graduate</div>
                 </div>
               </Col>
               <Col md={3} sm={6} className="mb-4">
                 <div className="achievement-item">
-                  <div className="achievement-number">3+</div>
-                  <div className="achievement-label">Years Experience</div>
-                  <div className="achievement-description">WeThinkCode_ + Real Projects</div>
+                  <div className="achievement-number">1+</div>
+                  <div className="achievement-label">Years at WeThinkCode_</div>
+                  <div className="achievement-description">Intensive software engineering training</div>
                 </div>
               </Col>
               <Col md={3} sm={6} className="mb-4">
                 <div className="achievement-item">
-                  <div className="achievement-number">5+</div>
-                  <div className="achievement-label">Tech Stack</div>
-                  <div className="achievement-description">Python, Flask, Java, Django, SQL</div>
+                  <div className="achievement-number">6+</div>
+                  <div className="achievement-label">Programming Languages</div>
+                  <div className="achievement-description">Python, Java, JavaScript, SQL, C++</div>
                 </div>
               </Col>
               <Col md={3} sm={6} className="mb-4">
                 <div className="achievement-item">
-                  <div className="achievement-number">100%</div>
-                  <div className="achievement-label">Ready to Contribute</div>
-                  <div className="achievement-description">Final year + mentoring experience</div>
+                  <div className="achievement-number">5</div>
+                  <div className="achievement-label">Major Certifications</div>
+                  <div className="achievement-description">CS50, CloudSec, Standard Bank, Generative AI, Financial Literacy</div>
                 </div>
               </Col>
             </Row>
             <Row className="mt-4">
               <Col lg={12} className="text-center">
                 <div className="skills-highlight">
-                  <h5>Core Technical Skills - Junior Developer Ready</h5>
+                  <h5>Technical Skills & Expertise</h5>
                   <div className="skills-section">
                     <div className="skill-category">
-                      <h6>Backend Development</h6>
+                      <h6>Core Programming</h6>
                       <div className="skills-tags">
-                        <span className="skill-tag primary">Python</span>
-                        <span className="skill-tag primary">Flask</span>
-                        <span className="skill-tag">Java</span>
-                        <span className="skill-tag">Django</span>
-                        <span className="skill-tag">RESTful APIs</span>
-                      </div>
-                    </div>
-                    <div className="skill-category">
-                      <h6>Database & Tools</h6>
-                      <div className="skills-tags">
+                        <span className="skill-tag primary">Python (Intermediate)</span>
+                        <span className="skill-tag primary">Java</span>
+                        <span className="skill-tag">JavaScript</span>
                         <span className="skill-tag">SQL</span>
-                        <span className="skill-tag">Teradata</span>
-                        <span className="skill-tag">Git</span>
-                        <span className="skill-tag">JSON Web Tokens</span>
-                        <span className="skill-tag">Version Control</span>
+                        <span className="skill-tag">Flutter (Learning)</span>
                       </div>
                     </div>
                     <div className="skill-category">
-                      <h6>Cloud & Security</h6>
+                      <h6>Development Practices</h6>
                       <div className="skills-tags">
-                        <span className="skill-tag">AWS Services</span>
-                        <span className="skill-tag">Cloud Security</span>
-                        <span className="skill-tag">Lambda Functions</span>
+                        <span className="skill-tag">Object-Oriented Programming</span>
+                        <span className="skill-tag">Agile Development</span>
+                        <span className="skill-tag">Software Testing</span>
+                        <span className="skill-tag">Mobile Development</span>
+                        <span className="skill-tag">DevOps</span>
+                      </div>
+                    </div>
+                    <div className="skill-category">
+                      <h6>Specialized Knowledge</h6>
+                      <div className="skills-tags">
+                        <span className="skill-tag">AWS Cloud Security</span>
+                        <span className="skill-tag">Generative AI</span>
+                        <span className="skill-tag">RESTful APIs</span>
                         <span className="skill-tag">Spring Boot</span>
+                        <span className="skill-tag">Flask & Django</span>
                       </div>
                     </div>
                     <div className="skill-category">
-                      <h6>Soft Skills</h6>
+                      <h6>Professional Skills</h6>
                       <div className="skills-tags">
-                        <span className="skill-tag leadership">Mentoring</span>
+                        <span className="skill-tag leadership">Technical Mentoring</span>
                         <span className="skill-tag leadership">Problem Solving</span>
                         <span className="skill-tag leadership">Team Collaboration</span>
-                        <span className="skill-tag leadership">Event Management</span>
+                        <span className="skill-tag leadership">Continuous Learning</span>
                       </div>
                     </div>
                   </div>

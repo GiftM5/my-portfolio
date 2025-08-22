@@ -46,7 +46,7 @@ export const cloudSecData = {
         },
         {
           title: "AWS Billing Dashboard",
-          url: "/assets/img/cloudsec/week1-billing-dashboard.png",
+          url: "/assets/img/cloudsec/week1-aws-billing-dashboard.png",
           description: "Screenshot of my billing dashboard proving active account"
         }
       ],
@@ -500,12 +500,12 @@ export const cloudSecData = {
 
 // Helper function to get current week status
 export const getCurrentWeekStatus = () => {
-  const currentWeek = 10; // Update this as you progress
+  const currentWeek = 10; // COMPLETED! 🎉
   return {
     currentWeek,
     totalWeeks: 10,
-    completedWeeks: cloudSecData.weeks.filter(week => week.status === 'completed').length,
-    progressPercentage: Math.round((currentWeek / 10) * 100)
+    completedWeeks: 10, // All weeks completed!
+    progressPercentage: 100 // 100% COMPLETE!
   };
 };
 

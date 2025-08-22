@@ -27,7 +27,7 @@ export const Footer = () => {
                 </a>
               </div>
               <h4 className="footer-name">Mpho Gift Mofokeng</h4>
-              <p className="footer-tagline">Junior Software Developer | Final Year WeThinkCode_ | Ready to Contribute</p>
+              <p className="footer-tagline">Software Engineering Student | Python & Java Developer | Industry Ready</p>
               <p className="copyright">Copyright 2025. All Rights Reserved</p>
             </div>
           </Col>
