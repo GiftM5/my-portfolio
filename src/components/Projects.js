@@ -22,7 +22,7 @@ export const Projects = () => {
         "Created SQL queries for data retrieval from Teradata",
         "Built Django application for personalized user data views"
       ],
-      githubUrl: "https://github.com/GiftM5", // Replace with actual repo
+      githubUrl: "https://github.com/GiftM5/JWT_Authentication", // Replace with actual repo
       type: "simulation"
     },
     {
@@ -61,7 +61,7 @@ export const Projects = () => {
         "Managed dependencies and build processes with Maven",
         "Designed efficient database schemas and queries"
       ],
-      githubUrl: "https://github.com/GiftM5", // Replace with actual repo
+      githubUrl: "https://github.com/GiftM5/forage-midas/tree/flow", // Replace with actual repo
       type: "academic"
     },
     {
@@ -74,7 +74,7 @@ export const Projects = () => {
         "Implemented data integrity constraints and triggers",
         "Created stored procedures and functions"
       ],
-      githubUrl: "https://github.com/GiftM5", // Replace with actual repo
+      githubUrl: null,
       type: "academic"
     },
     {
@@ -101,7 +101,7 @@ export const Projects = () => {
         "Develop personal projects exploring AI integration in software solutions",
         "Balance technical growth with personal interests like chess strategy"
       ],
-      githubUrl: "https://github.com/GiftM5",
+      githubUrl: "https://github.com/GiftM5/Embraced",
       type: "personal"
     }
   ];

@@ -23,9 +23,10 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                I am a Java and Python developer with a passion for building secure, efficient, and user-friendly applications.
-                My expertise spans software engineering, cloud security, and full-stack development. I enjoy solving real-world
-                problems and continuously expanding my knowledge in cybersecurity and cloud technologies.
+                With my passion of developing secure systems.I am still crafting my skills and allowing my self to  grow in these areas.
+                I do not want to be just a developer,I want to contribute into building systems that tells a story and changes not only my 
+                society but the whole world. I want to work with a team that will push me to be
+                the best version of myself.
               </p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
