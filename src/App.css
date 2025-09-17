@@ -1002,13 +1002,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .reason-card {
-  background-color: #1e1e2f; /* dark color for all cards by default */
+  background-color: #1e1e2f; /* dark color for the outside of the card */
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  height: 100%;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  overflow: hidden;
 }
 
 .reason-card:hover,

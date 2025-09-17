@@ -139,7 +139,7 @@ export const CloudSecNetworck = ({ selectedWeek, onWeekSelect }) => {
           <Col md={6} lg={4} key={week.id} className="mb-4">
             <Card
               className="h-100 cloudsec-week-card"
-              style={{ cursor: 'pointer', transition: 'transform 0.2s' }}
+              style={{ backgroundColor: '#e9d7f3ff', border: '1px solid rgba(184, 41, 41, 0.1)',cursor: 'pointer', transition: 'transform 0.2s' }}
               onClick={() => handleWeekClick(week)}
               onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
               onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
