@@ -7,6 +7,8 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { FaGraduationCap, FaLaptopCode, FaCheck, FaTrophy, FaUsers, FaRobot, FaRocket, FaBullseye, FaHandsHelping } from 'react-icons/fa';
+
 
 export const Projects = () => {
 
@@ -223,7 +225,7 @@ export const Projects = () => {
 
                         <div className="timeline">
                           <div className="timeline-item completed">
-                            <div className="timeline-marker">🎓</div>
+                            <div className="timeline-marker"><FaGraduationCap size={24}/></div>
                             <div className="timeline-content">
                               <h4>2020-2024: Academic Foundation</h4>
                               <p><strong>Matric & University of Johannesburg (BSc In Physics)</strong></p>
@@ -237,7 +239,7 @@ export const Projects = () => {
                           </div>
 
                           <div className="timeline-item completed">
-                            <div className="timeline-marker">💻</div>
+                            <div className="timeline-marker"><FaLaptopCode size={24}/></div>
                             <div className="timeline-content">
                               <h4>Sep 2024-2025: WeThinkCode_ Journey</h4>
                               <p><strong>Diploma in Software Engineering</strong></p>
@@ -251,7 +253,7 @@ export const Projects = () => {
                           </div>
 
                           <div className="timeline-item completed">
-                            <div className="timeline-marker">✅</div>
+                            <div className="timeline-marker"><FaCheck size={24}/></div>
                             <div className="timeline-content">
                               <h4>2025: Harvard CS50 Python</h4>
                               <p><strong>Introduction to Programming with Python</strong></p>
@@ -265,7 +267,7 @@ export const Projects = () => {
                           </div>
 
                           <div className="timeline-item completed">
-                            <div className="timeline-marker">✅</div>
+                            <div className="timeline-marker"><FaCheck size={24}/></div>
                             <div className="timeline-content">
                               <h4>2025: Standard Bank Simulation</h4>
                               <p><strong>Software Engineering Job Simulation</strong></p>
@@ -279,7 +281,7 @@ export const Projects = () => {
                           </div>
 
                           <div className="timeline-item completed">
-                            <div className="timeline-marker">🏆</div>
+                            <div className="timeline-marker"><FaTrophy size={24}/></div>
                             <div className="timeline-content">
                               <h4>2022: IMSAFER SA Training Program</h4>
                               <p><strong>Leadership & Safety Management Certification</strong></p>
@@ -293,7 +295,7 @@ export const Projects = () => {
                           </div>
 
                           <div className="timeline-item completed">
-                            <div className="timeline-marker">👥</div>
+                            <div className="timeline-marker"><FaHandsHelping size={24}/></div>
                             <div className="timeline-content">
                               <h4>2025: Technical Mentoring & Leadership</h4>
                               <p><strong>WeThinkCode_ Bootcamp Mentor & WomenThinkCode Events Coordinator</strong></p>
@@ -307,7 +309,7 @@ export const Projects = () => {
                           </div>
 
                           <div className="timeline-item completed">
-                            <div className="timeline-marker">🤖</div>
+                            <div className="timeline-marker"><FaRobot size={24}/></div>
                             <div className="timeline-content">
                               <h4>2025: Generative AI Certification</h4>
                               <p><strong>AI & Machine Learning Specialization</strong></p>
@@ -321,7 +323,7 @@ export const Projects = () => {
                           </div>
 
                           <div className="timeline-item completed">
-                            <div className="timeline-marker">🎉</div>
+                            <div className="timeline-marker"><FaTrophy size={24}/></div>
                             <div className="timeline-content">
                               <h4>2025: CloudSec Network Graduate</h4>
                               <p><strong>Cloud Security & Network Engineering Bootcamp</strong></p>
@@ -335,7 +337,7 @@ export const Projects = () => {
                           </div>
 
                           <div className="timeline-item next">
-                            <div className="timeline-marker">🚀</div>
+                            <div className="timeline-marker"><FaRocket size={24}></FaRocket></div>
                             <div className="timeline-content">
                               <h4>Next: Professional Growth & Exploration</h4>
                               <p><strong>Ready for Junior Developer Role</strong></p>
@@ -354,19 +356,19 @@ export const Projects = () => {
                           <Row>
                             <Col md={4}>
                               <div className="philosophy-card">
-                                <h5>🎯 Problem-Solving Passion</h5>
+                                <h5><FaBullseye size={24}/> Problem-Solving Passion</h5>
                                 <p>From physics equations to coding challenges, I love breaking down complex problems into manageable solutions. Chess strategy has sharpened this analytical thinking.</p>
                               </div>
                             </Col>
                             <Col md={4}>
                               <div className="philosophy-card">
-                                <h5>🤝 Learning Through Teaching</h5>
+                                <h5><FaHandsHelping size={24}/> Learning Through Teaching</h5>
                                 <p>Mentoring WeThinkCode_ students has taught me that explaining concepts to others deepens my own understanding and builds leadership skills.</p>
                               </div>
                             </Col>
                             <Col md={4}>
                               <div className="philosophy-card">
-                                <h5>🚀 Future-Focused Growth</h5>
+                                <h5><FaRocket size={24}/> Future-Focused Growth</h5>
                                 <p>I'm excited about AI, Flutter, and emerging technologies. My curiosity drives me to explore new tools while mastering the fundamentals.</p>
                               </div>
                             </Col>
