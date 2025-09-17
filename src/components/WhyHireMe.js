@@ -117,6 +117,7 @@ export const WhyHireMe = () => {
                       }`}
                       onMouseEnter={() => setActiveCard(reason.id)}
                       onMouseLeave={() => setActiveCard(null)}
+                       style={{ backgroundColor: '#1e1e2f', border: '1px solid rgba(255,255,255,0.1)' }}
                     >
                       <Card.Body>
                         <div className="reason-icon">{reason.icon}</div>
