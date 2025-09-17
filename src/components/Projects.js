@@ -22,7 +22,7 @@ export const Projects = () => {
         "Created SQL queries for data retrieval from Teradata",
         "Built Django application for personalized user data views"
       ],
-      githubUrl: "https://github.com/GiftM5/JWT_Authentication", // Replace with actual repo
+      githubUrl: "https://github.com/GiftM5/JWT_Authentication", 
       type: "simulation"
     },
     {
@@ -35,7 +35,7 @@ export const Projects = () => {
         "Built command-line applications and utilities",
         "Earned official Harvard CS50 certification"
       ],
-      githubUrl: "https://github.com/GiftM5", // Replace with actual repo
+      githubUrl: "https://github.com/GiftM5", 
       type: "certification"
     },
     {
@@ -48,7 +48,7 @@ export const Projects = () => {
         "Integrated with PostgreSQL database using SQLAlchemy",
         "Created comprehensive API documentation"
       ],
-      githubUrl: "https://github.com/GiftM5", // Replace with actual repo
+      githubUrl: "https://github.com/GiftM5", 
       type: "personal"
     },
     {
@@ -61,7 +61,7 @@ export const Projects = () => {
         "Managed dependencies and build processes with Maven",
         "Designed efficient database schemas and queries"
       ],
-      githubUrl: "https://github.com/GiftM5/forage-midas/tree/flow", // Replace with actual repo
+      githubUrl: "https://github.com/GiftM5/forage-midas/tree/flow", 
       type: "academic"
     },
     {
@@ -119,8 +119,8 @@ export const Projects = () => {
       imgUrl: projImg2,
     },
     {
-      title: "IMSAFER SA Leadership Training",
-      description: "Safety Management & Team Leadership",
+      title: "Workshop Facilitator and Community Outreach",
+      description: "Facilitating Python workshops for women and Social Media & Event Promotion",
       imgUrl: projImg3,
     },
     {
@@ -132,11 +132,6 @@ export const Projects = () => {
       title: "Physics & Chemistry Studies",
       description: "University of Johannesburg - BSc Physics",
       imgUrl: projImg2,
-    },
-    {
-      title: "Community Outreach",
-      description: "Social Media & Event Promotion",
-      imgUrl: projImg3,
     },
   ];
 
@@ -231,7 +226,7 @@ export const Projects = () => {
                             <div className="timeline-marker">🎓</div>
                             <div className="timeline-content">
                               <h4>2020-2024: Academic Foundation</h4>
-                              <p><strong>Matric & University of Johannesburg (BSc Physics)</strong></p>
+                              <p><strong>Matric & University of Johannesburg (BSc In Physics)</strong></p>
                               <ul>
                                 <li>Completed Matric with focus on science and mathematics</li>
                                 <li>Studied BSc Physics, developing strong analytical and problem-solving skills</li>
@@ -245,10 +240,10 @@ export const Projects = () => {
                             <div className="timeline-marker">💻</div>
                             <div className="timeline-content">
                               <h4>Sep 2024-2025: WeThinkCode_ Journey</h4>
-                              <p><strong>Diploma in Software Engineering (Final Year)</strong></p>
+                              <p><strong>Diploma in Software Engineering</strong></p>
                               <ul>
                                 <li>Intensive software engineering training in Python and Java</li>
-                                <li>Comprehensive coursework: OOP, Testing, Agile Development, Mobile Development, DevOps</li>
+                                <li>Comprehensive coursework: OOP, Testing, Agile Development, Systems Intergration,Mobile Development, DevOps</li>
                                 <li>Built real-world applications and RESTful APIs</li>
                                 <li>Developed collaborative coding and version control skills</li>
                               </ul>

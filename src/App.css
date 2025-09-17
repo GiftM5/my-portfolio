@@ -1002,13 +1002,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .reason-card {
-  background: rgba(0, 0, 0, 0.3);
+  background-color: #1e1e2f; /* dark color for the outside of the card */
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  height: 100%;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  overflow: hidden;
 }
 
 .reason-card:hover,
@@ -1019,9 +1014,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+
 .reason-card .card-body {
   padding: 25px;
-  color: #fff;
+  color: #4e0f5e;
 }
 
 .reason-icon {
@@ -1033,7 +1029,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .reason-card .card-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #00D4FF;
+  color: #b012d8;
   margin-bottom: 15px;
 }
 
