@@ -1,59 +1,36 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
-  const responsive = {
-    superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 5 },
-    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3 },
-    tablet: { breakpoint: { max: 1024, min: 464 }, items: 2 },
-    mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
-  };
+  const skills = [
+    "Python",
+    "Java",
+    "React",
+    "Spring Boot",
+    "Flask",
+    "SQL",
+    "AWS Fundamentals",
+    "Testing",
+    "Git & GitHub",
+    "Agile Collaboration",
+  ];
 
   return (
     <section className="skill" id="skills">
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
+            <div className="skill-bx simple-skill-bx">
+              <h2>Core Skills</h2>
               <p>
-                With my passion of developing secure systems.I am still crafting my skills and allowing my self to  grow in these areas.
-                I do not want to be just a developer,I want to contribute into building systems that tells a story and changes not only my 
-                society but the whole world. I want to work with a team that will push me to be
-                the best version of myself.
+                I focus on building reliable backend and full stack projects with clean, practical code.
               </p>
-              <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                <div className="item">
-                  <img src={meter1} alt="Cloud Security" />
-                  <h5>Cloud Security</h5>
-                </div>
-                <div className="item">
-                  <img src={meter2} alt="Web Development" />
-                  <h5>Web Development (React & Bootstrap)</h5>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="Networking" />
-                  <h5>Network Fundamentals</h5>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Programming" />
-                  <h5>Java & Python Programming</h5>
-                </div>
-                <div className="item">
-                  <img src={meter2} alt="Cybersecurity" />
-                  <h5>Cybersecurity Basics</h5>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="Database" />
-                  <h5>Database Management (SQL,NoSQL)</h5>
-                </div>
-              </Carousel>
+              <div className="simple-skill-grid">
+                {skills.map((skill) => (
+                  <span key={skill} className="simple-skill-chip">
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
