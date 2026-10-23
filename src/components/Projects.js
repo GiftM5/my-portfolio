@@ -21,47 +21,78 @@ export const Projects = () => {
 
   const softwareProjects = [
     {
-      title: "Jwt Authentication System",
-      description: "Built secure backend features with JWT auth and integrated Python Lambda for identity workflows.",
-      stack: ["Java", "Spring Boot", "Python", "AWS Lambda", "JWT", "SQL"],
-      link: "https://github.com/GiftM5/JWT_Authentication",
+      title: "Banking API System",
+      description: "REST banking service with CRUD account endpoints and transaction handling, using validated request/response models and a database layer.",
+      stack: ["Python", "FastAPI", "Pydantic", "SQLAlchemy", "SQLite"],
+      link: "https://github.com/GiftM5/Banking-API-System",
     },
     {
-      title: "Flask REST API",
-      description: "Created RESTful services with authentication and database integration for real-world backend use cases.",
-      stack: ["Python", "Flask", "PostgreSQL", "SQLAlchemy", "JWT"],
-      link: "https://github.com/GiftM5",
+      title: "Distributed Systems Infrastructure Design",
+      description: "Two-module service that accepts requests offline and replays them through a message broker when connectivity returns, with scaling and failure analysis.",
+      stack: ["Linux", "Nginx", "HAProxy", "Kafka", "Redis", "PostgreSQL", "Shell"],
+      link: "https://github.com/GiftM5/Infrastructure-engineering-assignment",
     },
     {
-      title: "Offline-First Distributed Government Service System",
-      description: "This project simulates how government offices in areas with unreliable internet can continue to provide services without stopping operations, and later synchronize data safely with a central government system",
-      stack: ["Java", "Distributed Systems", "Data Structures"],
+      title: "Offline-First Government Service System",
+      description: "Resilient service queueing for offices with unreliable internet. Six-tier architecture with provisioning scripts and technical notes covering scaling and failure scenarios.",
+      stack: ["Java", "Spring Boot", "ActiveMQ", "Maven", "Docker"],
       link: "https://github.com/GiftM5/Offline-First-Government-Service-System",
+    },
+    {
+      title: "Northfold E-commerce Product Page",
+      description: "Responsive, accessible Shopify product page with product details, pricing and interactive options, optimised for mobile and desktop.",
+      stack: ["HTML", "CSS", "JavaScript", "Shopify", "Git"],
+      link: "https://github.com/GiftM5/northfold-product-page",
     },
   ];
 
   const standout = [
-    "CloudSec Internship: Cloud Security Engineer",
-    "Recognized as Top Student",
-    "Technical Mentor at WeThinkCode_",
+    ""
   ];
 
-  const learningMilestones = [
+  const professionalExperience = [
     {
-      period: "2025",
-      title: "CloudSec Internship",
-      summary: "Worked as a Cloud Security Engineer intern, delivering practical security tasks and earning top student recognition.",
+      period: "02/2026 - Present",
+      title: "Software Engineering Intern, Computro Solutions",
+      summary: "Develop and support backend and frontend applications, REST APIs and integrations. Assist with AWS deployments, testing, debugging, code reviews, unit testing and release workflows.",
     },
     {
-      period: "2024 - 2025",
-      title: "WeThinkCode_",
-      summary: "Intensive software engineering training in Python, Java, testing, and agile collaboration.",
+      period: "10/2026",
+      title: "Software Developer Trainee, Activate Academy",
+      summary: "Customised Shopify themes with Liquid, HTML, CSS and JavaScript. Built AJAX cart updates, a free-shipping progress indicator and a recently viewed products feature.",
     },
     {
-      period: "2025",
-      title: "Technical Mentoring",
-      summary: "Supported peers with debugging, architecture guidance, and consistency in coding practices.",
+      period: "07/2025 - 11/2025",
+      title: "Cloud Security Intern, CloudSec Network",
+      summary: "Top student, promoted from Trainee to Intern. Supported AWS workloads (ECS Fargate, S3, CloudFront, IAM, CloudWatch) and provisioned infrastructure with Terraform.",
     },
+  ];
+
+  const volunteering = [
+    {
+      period: "03/2026 - Present",
+      title: "Junior Data Engineer, Dubs Mathematics Programme",
+      summary: "Support data requirements, ETL/ELT pipelines, SQL queries and data reliability troubleshooting.",
+    },
+    {
+      period: "05/2025 - 12/2025",
+      title: "Events Coordinator, WomenThinkCode_",
+      summary: "Helped organise workshops, hackathons and community events promoting women's participation in technology.",
+    },
+  ];
+
+  const education = [
+    {
+      period: "09/2024 - 12/2025",
+      title: "Diploma in Software Engineering, WeThinkCode_",
+      summary: "Intensive software engineering training in Python, Java, testing and agile collaboration.",
+    },
+  ];
+
+  const journeySections = [
+    { heading: "Professional Experience", items: professionalExperience },
+    { heading: "Volunteering & Leadership", items: volunteering },
+    { heading: "Education", items: education },
   ];
 
   return (
@@ -170,19 +201,24 @@ export const Projects = () => {
                       </Tab.Pane>
 
                       <Tab.Pane eventKey="third">
-                        <div className="learning-grid">
-                          {learningMilestones.map((item, index) => (
-                            <article
-                              className="learning-card project-reveal"
-                              key={item.title}
-                              style={{ animationDelay: `${index * 0.12}s` }}
-                            >
-                              <span>{item.period}</span>
-                              <h4>{item.title}</h4>
-                              <p>{item.summary}</p>
-                            </article>
-                          ))}
-                        </div>
+                        {journeySections.map((section) => (
+                          <div key={section.heading} className="journey-section">
+                            <h5 className="journey-heading">{section.heading}</h5>
+                            <div className="learning-grid">
+                              {section.items.map((item, index) => (
+                                <article
+                                  className="learning-card project-reveal"
+                                  key={item.title}
+                                  style={{ animationDelay: `${index * 0.12}s` }}
+                                >
+                                  <span>{item.period}</span>
+                                  <h4>{item.title}</h4>
+                                  <p>{item.summary}</p>
+                                </article>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

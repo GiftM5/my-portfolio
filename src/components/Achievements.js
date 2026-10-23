@@ -97,6 +97,7 @@ export const Achievements = () => {
                         <span className="skill-tag primary">Java</span>
                         <span className="skill-tag">JavaScript</span>
                         <span className="skill-tag">SQL</span>
+                        <span className="skill-tag">Shopify</span>
                         <span className="skill-tag">Flutter (Learning)</span>
                       </div>
                     </div>

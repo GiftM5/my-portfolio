@@ -8,6 +8,7 @@ export const Skills = () => {
     "Spring Boot",
     "Flask",
     "SQL",
+    "Shopify",
     "AWS Fundamentals",
     "Testing",
     "Git & GitHub",

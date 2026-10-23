@@ -19,7 +19,7 @@ export const WhyHireMe = () => {
       title: "Strong Technical Foundation",
       icon: <BsRocket />,
       description:
-        "Final-year Software Engineering student with proven expertise in Python and Java, backed by comprehensive training and multiple industry certifications.",
+        "Junior Software Engineer with proven expertise in Python and Java, backed by comprehensive training and multiple industry certifications.",
       details: [
         "WeThinkCode_ Software Engineering Diploma (Final Year)",
         "Intermediate Python developer with Java proficiency",

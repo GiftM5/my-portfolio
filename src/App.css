@@ -1874,6 +1874,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   gap: 16px;
 }
 
+.journey-section {
+  margin-bottom: 28px;
+}
+
+.journey-heading {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: #ffadcc;
+}
+
 .learning-card {
   background: #161616;
   border: 1px solid rgba(255, 255, 255, 0.12);
